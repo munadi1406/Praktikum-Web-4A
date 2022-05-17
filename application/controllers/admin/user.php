@@ -30,7 +30,7 @@ class User extends CI_Controller {
 	}
 	public function getedit($id){
 		$data = array(
-		'title' => 'Update Data user',
+		'title' => 'Edit Data user',
 		'user' => $this->User_model->getById($id),
 		'content'=> 'admin/user/edit_form'
 		);

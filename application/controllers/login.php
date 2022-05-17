@@ -37,10 +37,10 @@ class login extends CI_Controller {
 				// periksa role-nya
 				if ($user['role'] == 'admin') {
 					$this->_updateLastLogin($userid);
-					redirect('admin/menu');
+					redirect('surat_ajuan');
 				}else if ($user['role'] == 'sekertaris'){
 					$this->_updateLastLogin($userid);
-					redirect('surat');
+					redirect('admin/user');
 				}
 			}else{
 				// jika password salah
